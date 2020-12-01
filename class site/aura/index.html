@@ -1,0 +1,67 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+  <title dir="ltr">♡</title>
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" media="screen" href="style.css" >
+  <script type="text/javascript" src="randomizer.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="audio.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready( function() {
+    $('#track1').one ('click', function(){
+       $('#wrap').append('<embed id="embed_player" src="music.mp3" autostart="true" hidden="true"></embed>');
+    });
+    });
+
+    </script>
+    <img name="track1" src="img/img1" width="100%" height="100%" border="0" id="track1" z-index=5 alt="" />
+    <div id="wrap">&nbsp;</div>
+
+    <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#div2").fadeOut("slow");
+
+      });
+    });
+    </script>
+
+    <script src="jquery.min.js"></script>
+  <body>
+    <body onLoad="pickimg()">
+      <body onLoad="pickimg()">
+
+      <div id="div2" style="width:100vw;height:100vh;background-color:black;position:absolute;top:0%;left:0%;z-index:2;"></div><br>
+<button style="position:absolute;top:30%;left:46%;z-index:4;">Click to begin!</button><br><br>
+
+<div class="wrapper"></div>
+
+<div class="container">
+    <a href="" onClick="pickimg();return false;"><IMG SRC="img1" class="glow" name="randimg" border=0 width="300px"></a>
+</div>
+
+<div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+  </div>
+</div>
+
+
+
+<script src="jquery.min.js"></script>
+
+</body>
+</html>

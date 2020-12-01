@@ -1,0 +1,151 @@
+body{
+height: 100vh;
+width: 100vw;
+justify-content: center;
+overflow: hidden;
+}
+
+img {
+
+}
+.glow{
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+ -moz-animation: glow 1s ease-in-out infinite alternate;
+ animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+ from {
+   box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6cf00, 0 0 40px #e6dc00, 0 0 50px #fee8a6, 0 0 60px #fff6cd, 0 0 70px #ffffff;
+ }
+
+ to {
+   box-shadow: 0 0 20px #fff, 0 0 30px #faf5cc, 0 0 40px #f6f3d2, 0 0 50px #fbfade, 0 0 60px #ffe84d, 0 0 70px #fbf4b7, 0 0 80px #fff9cd;
+ }
+}
+
+.container{
+  display: flex;
+  text-align: center;
+justify-content: center;
+  align-content: center;
+  position: absolute;
+  left:40%;
+  top:35%;
+  overflow:hidden;
+  z-index: 1;
+
+
+}
+
+.glow{
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+ -moz-animation: glow 1s ease-in-out infinite alternate;
+ animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+ from {
+   box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6cf00, 0 0 40px #e6dc00, 0 0 50px #fee8a6, 0 0 60px #fff6cd, 0 0 70px #ffffff;
+ }
+
+ to {
+   box-shadow: 0 0 20px #fff, 0 0 30px #faf5cc, 0 0 40px #f6f3d2, 0 0 50px #fbfade, 0 0 60px #ffe84d, 0 0 70px #fbf4b7, 0 0 80px #fff9cd;
+ }
+}
+
+
+    @keyframes move_wave {
+        0% {
+            transform: translateX(0) translateZ(0) scaleY(1)
+        }
+        50% {
+            transform: translateX(-25%) translateZ(0) scaleY(0.55)
+        }
+        100% {
+            transform: translateX(-50%) translateZ(0) scaleY(1)
+        }
+    }
+    .waveWrapper {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        z-index: -1;
+    }
+    .waveWrapperInner {
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+        bottom: -1px;
+        background-image: linear-gradient(to top, #f9f3da 20%, #ffe329 80%);
+        background: linear-gradient(180deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+        background-size: 1800% 1800%;
+        -webkit-animation: rainbow 18s ease infinite;
+        -z-animation: rainbow 18s ease infinite;
+        -o-animation: rainbow 18s ease infinite;
+          animation: rainbow 18s ease infinite;}
+
+    }
+
+    @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+
+
+    .bgTop {
+        z-index: 15;
+        opacity: 0.5;
+    }
+    .bgMiddle {
+        z-index: 10;
+        opacity: 0.75;
+    }
+    .bgBottom {
+        z-index: 5;
+        opacity: 0.5;
+    }
+    .wave {
+        position: absolute;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background-repeat: repeat no-repeat;
+        background-position: 0 bottom;
+        transform-origin: center bottom;
+    }
+
+    .waveMiddle {
+        background-size: 50% 600px;
+    }
+    .waveAnimation .waveMiddle {
+        animation: move_wave 10s linear infinite;
+    }
+    .waveBottom {
+        background-size: 50% 900px;
+        opacity: 0.75;
+    }
+    .waveAnimation .waveBottom {
+        animation: move_wave 15s linear infinite;
+    }
